@@ -1,0 +1,206 @@
+@import '_setup';
+
+//*** Global > Typography  ***//
+
+body {
+  color: $dark-grey;
+  font-family: $sans-serif-stack;
+  font-size: $base-font-size;
+  line-height: 1.7;
+  background-color: $white;
+}
+
+// Typography: Text
+//
+// .meta        - Meta text, good for timestamps and other categorical info
+// .alt         - Use sparingly!
+// .faded       - Light
+// .t-center    - Centered text
+// .inline      - Make a block element inline
+// .alert       - Make the text red!
+// .success     - Make the test green!
+// .no-margin   - No space below
+//
+// Styleguide 2.0.0
+
+p {
+  margin: 0 0 1em;
+  font-weight: 300;
+}
+p em {
+  font-style: italic;
+}
+b,
+strong {
+  font-weight: bold;
+}
+::selection {
+  background: $text;
+  color: $white;
+}
+.meta {
+  text-transform: lowercase;
+  font-variant: small-caps;
+  color: lighten($text, 30%);
+}
+p.alt {
+  font-weight: 200;
+}
+.faded {
+  color: darken($grey, 20%);
+}
+.no-margin {
+  margin: 0;
+}
+.t-center {
+  text-align: center;
+}
+del {
+  position: relative;
+  text-decoration: none;
+}
+del:after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 42%;
+  width: 100%;
+  background: $text;
+  height: 5px;
+
+  @include respond-to(site-width) {
+    height: 10px;
+  }
+}
+.inline {
+  display: inline;
+}
+.alert {
+  margin-left: 0.5em;
+  color: $error;
+}
+.success {
+  margin-left: 0.5em;
+  color: $success;
+}
+span.highlight {
+  color: $brand;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  margin-left: 0;
+}
+li a {
+  background-color: $white;
+  color: $text;
+  border-bottom: 1px solid $brand;
+  font-size: 14px;
+}
+li a:hover {
+  background-color: $brand;
+  color: $white;
+  border-bottom: 1px solid $brand;
+}
+
+//*** Global > Typography > Headings  ***//
+
+// Typography: Headers
+//
+// Styleguide 2.1.0
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.75em;
+  font-weight: 300;
+}
+h1 {
+  margin-bottom: 0.5em;
+  font-size: $type-sz-1-m;
+  line-height: 1;
+
+  @include respond-to(site-width) {
+    font-size: $type-sz-1;
+    letter-spacing: -3px;
+  }
+
+  @media print {
+    font-size: $type-sz-2;
+  }
+}
+h1.xlg {
+  @include respond-to(site-width) {
+    font-size: $type-sz-xlg;
+  }
+}
+h1 span {
+  color: darken($brand, 5%)
+}
+h2 {
+  font-size: $type-sz-2;
+  line-height: 1.2;
+}
+h3 {
+  font-size: $type-sz-3;
+  font-weight: 300;
+}
+h4 {
+  font-size: $type-sz-4;
+}
+h5 {
+  margin-bottom: 0;
+  font-size: $type-sz-5;
+}
+h6 {
+  font-size: $type-sz-6;
+}
+
+//*** Global > Links/Controls ***//
+
+// Typography: Links
+//
+// :hover               - Hover State
+// :active              - Active State
+//
+// Styleguide 2.2.0
+
+a, button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: none; // For FF 3.6
+}
+a, form.general div.submit button {
+  color: $white;
+  text-decoration: none;
+  background-color: $brand;
+  @include transition(background-color 0.25s)
+}
+form.text div.submit button span{
+  border-bottom: 2px solid transparent;
+  @include transition(border-color 0.25s)
+}
+a:hover, a:focus,
+form.text:hover div.submit button span {
+  background-color: $text;
+
+  // The underline can't be applied to <button> in FF 3.6, so we instead
+    // apply it to a non-semantic wrapper inside.
+}
+a:active {}
+a:visited {}
+a.small {
+  font-size: $type-sz-6;
+  padding: 10px;
+}
+
+input.placeholder, textarea.placeholder {
+  color: #999;
+}
+input[disabled],
+button[disabled] {
+  cursor: pointer;
+  opacity: 0.5;
+    filter: alpha(opacity=50);
+}
