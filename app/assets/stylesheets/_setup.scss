@@ -21,15 +21,16 @@ $tumblr:          #34465d;
 $palette-blue:    #5ea9dd;
 
 // Typography
-$sans-serif-stack: 'Inconsolata', Arial, sans-serif;
+$sans-serif-stack: 'Roboto Mono', monospace;
+$serif-stack: 'Playfair Display', serif;
 $base-font-size: 16px;
 $type-sz-xlg:    80px;
 $type-sz-1-m:    36px;
-$type-sz-1:      40px;
+$type-sz-1:      48px;
 $type-sz-2:      28px;
 $type-sz-3:      36px;
 $type-sz-4:      24px;
-$type-sz-5:      16px;
+$type-sz-5:      14px;
 $type-sz-6:      12px;
 
 // Breakpoints
@@ -39,8 +40,8 @@ $one-column: 750px;
 $border-radius: 4px;
 
 // Layout
-$h-gutter:          3px;
-$v-gutter:          80px;
+$h-gutter:          20px;
+$v-gutter:          40px;
 $site-max-width:  1445px;
 
 

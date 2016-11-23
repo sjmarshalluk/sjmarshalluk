@@ -1,3 +1,121 @@
-// Place all the styles related to the pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body.smr {
+  background: #ffffff;
+}
+
+body.moo .sketch {
+  background: #ffffff image-url('mosaic/sketches.png') no-repeat center top / 1200px;
+  padding-top: 300px;
+}
+
+body.yld {
+  background: #ffffff;
+}
+
+
+
+
+
+.image .svg {
+  height: 200px;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.image {
+  text-align: center;
+  background-color: #111213;
+  padding: 100px 0;
+}
+
+
+.image .path {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  -webkit-animation: dash 1s linear alternate forwards infinite;
+}
+
+.image .path-long {
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  -webkit-animation: dashlong 1s linear alternate forwards infinite;
+}
+
+.image .path-short {
+  stroke-dasharray: 50;
+  stroke-dashoffset: 50;
+  -webkit-animation: dashshort 2s linear alternate forwards infinite;
+}
+
+@-webkit-keyframes dash {
+  from {
+    stroke-dashoffset: 300;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes dashlong {
+  from {
+    stroke-dashoffset: 600;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes dashshort {
+  from {
+    stroke-dashoffset: 50;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+
+
+a.thumb {
+  height: 600px;
+  display: block;
+  color: $text;
+  @include transition(opacity 0.25s)
+}
+
+a.thumb p {
+  padding: 15px 20px;
+  font-size: 12px;
+}
+
+a.thumb:hover {
+  opacity: 0.8;
+}
+
+
+
+#round {
+  background: #13ccc1 image-url('round/homepage.png') no-repeat center 4em / 350px;
+}
+
+#deskbeers {
+  background: #ffffff image-url('deskbeers/stall.png') no-repeat top left / cover;
+}
+
+#smr {
+  background: #ffffff image-url('smr/brand.png') no-repeat top left / cover;
+}
+
+#mosaic {
+  background: #22a0b7 image-url('mosaic/onboarding.gif') no-repeat top left / cover;
+}
+
+#projecteo {
+  background: #f8c23e image-url('projecteo/illustration.png') no-repeat center center / 250px;
+}
+
+#yld {
+  background: #3e6399 image-url('yld/n1.png') no-repeat center center / 250px;
+}

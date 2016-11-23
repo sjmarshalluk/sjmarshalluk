@@ -27,7 +27,10 @@ p {
   margin: 0 0 1em;
   font-weight: 300;
 }
-p em {
+.small {
+  font-size: $type-sz-5;
+}
+em {
   font-style: italic;
 }
 b,
@@ -72,6 +75,10 @@ del:after {
     height: 10px;
   }
 }
+
+.strike {
+    text-decoration: line-through;
+}
 .inline {
   display: inline;
 }
@@ -91,6 +98,7 @@ ul {
 }
 li {
   margin-left: 0;
+  margin-bottom: 20px;
 }
 li a {
   background-color: $white;
@@ -104,6 +112,8 @@ li a:hover {
   border-bottom: 1px solid $brand;
 }
 
+
+
 //*** Global > Typography > Headings  ***//
 
 // Typography: Headers
@@ -112,12 +122,14 @@ li a:hover {
 
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.75em;
-  font-weight: 300;
+  font-weight: 100;
 }
 h1 {
   margin-bottom: 0.5em;
-  font-size: $type-sz-1-m;
+  font-size: $type-sz-1;
   line-height: 1;
+  font-family: $serif-stack;
+  font-weight: 900;
 
   @include respond-to(site-width) {
     font-size: $type-sz-1;
@@ -133,9 +145,7 @@ h1.xlg {
     font-size: $type-sz-xlg;
   }
 }
-h1 span {
-  color: darken($brand, 5%)
-}
+
 h2 {
   font-size: $type-sz-2;
   line-height: 1.2;
@@ -172,10 +182,10 @@ button::-moz-focus-inner {
   border: none; // For FF 3.6
 }
 a, form.general div.submit button {
-  color: $white;
+  color: $brand;
   text-decoration: none;
-  background-color: $brand;
-  @include transition(background-color 0.25s)
+  background-color: $white;
+  @include transition(background-color 0.25s);
 }
 form.text div.submit button span{
   border-bottom: 2px solid transparent;
@@ -183,7 +193,7 @@ form.text div.submit button span{
 }
 a:hover, a:focus,
 form.text:hover div.submit button span {
-  background-color: $text;
+  background-color: $brand;
 
   // The underline can't be applied to <button> in FF 3.6, so we instead
     // apply it to a non-semantic wrapper inside.
@@ -193,6 +203,30 @@ a:visited {}
 a.small {
   font-size: $type-sz-6;
   padding: 10px;
+}
+
+a.arrow {
+  font-size: 48px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  background-color: transparent;
+  color: $text;
+}
+a.arrow {
+  background-color: transparent;
+}
+
+
+.header a:hover {
+  background-color: $white;
+}
+.header a span {
+  background-color: $brand;
+  @include transition(background-color 0.25s)
+}
+.header a:hover span {
+  background-color: $white;
 }
 
 input.placeholder, textarea.placeholder {
