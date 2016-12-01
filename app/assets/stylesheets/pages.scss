@@ -1,16 +1,13 @@
+@import '_setup';
 
-
-body.smr {
-  background: #ffffff;
+ul.nav {
+  float: right;
 }
 
-body.moo .sketch {
-  background: #ffffff image-url('mosaic/sketches.png') no-repeat center top / 1200px;
-  padding-top: 300px;
-}
-
-body.yld {
-  background: #ffffff;
+ul.nav li {
+  float: left;
+  width: 100px;
+  text-align: right;
 }
 
 
@@ -82,7 +79,10 @@ a.thumb {
   height: 600px;
   display: block;
   color: $text;
-  @include transition(opacity 0.25s)
+  @include transition(opacity 0.25s);
+  @include respond-to-max(med) {
+    height: 400px;
+  }
 }
 
 a.thumb p {
@@ -101,15 +101,15 @@ a.thumb:hover {
 }
 
 #deskbeers {
-  background: #ffffff image-url('deskbeers/stall.png') no-repeat top left / cover;
+  background: #ffffff image-url('deskbeers/stall.png') no-repeat top center / cover;
 }
 
 #smr {
-  background: #ffffff image-url('smr/brand.png') no-repeat top left / cover;
+  background: #ffffff image-url('smr/brand.png') no-repeat top center / cover;
 }
 
 #mosaic {
-  background: #22a0b7 image-url('mosaic/onboarding.gif') no-repeat top left / cover;
+  background: #22a0b7 image-url('mosaic/onboarding.gif') no-repeat top center / cover;
 }
 
 #projecteo {
@@ -119,3 +119,9 @@ a.thumb:hover {
 #yld {
   background: #3e6399 image-url('yld/n1.png') no-repeat center center / 250px;
 }
+
+#archive {
+  background: #3e6399 image-url('archive/wood_logo1.gif') no-repeat center center / cover;
+}
+
+

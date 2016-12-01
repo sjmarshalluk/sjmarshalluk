@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   root 'pages#index'
   get '/about' => 'pages#about'
-  get '/design' => 'pages#design'
+  get '/contact' => 'pages#contact'
   get '/theround' => 'pages#theround'
   get '/smr' => 'pages#smr'
   get '/moo' => 'pages#moo'

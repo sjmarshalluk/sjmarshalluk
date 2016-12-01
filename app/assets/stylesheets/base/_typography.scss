@@ -131,9 +131,8 @@ h1 {
   font-family: $serif-stack;
   font-weight: 900;
 
-  @include respond-to(site-width) {
-    font-size: $type-sz-1;
-    letter-spacing: -3px;
+  @include respond-to-max(med) {
+    font-size: $type-sz-1-m;
   }
 
   @media print {
@@ -212,6 +211,9 @@ a.arrow {
   display: block;
   background-color: transparent;
   color: $text;
+  @include respond-to-max(med) {
+    font-size: 24px;
+  }
 }
 a.arrow {
   background-color: transparent;

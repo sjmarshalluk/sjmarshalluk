@@ -21,14 +21,23 @@ video {
   max-width: $site-max-width;
   overflow: hidden;
   padding: 75px 75px;
+  @include respond-to-max(med) {
+    padding: 50px 25px;
+  }
 }
 .wrapper.header {
   padding: 0 75px;
+  @include respond-to-max(med) {
+    padding: 0 25px;
+  }
 }
 .row {
   width: 100%;
   overflow: hidden;
-  margin-top: $v-gutter;
+  margin-top: $v-gutter;  
+  @include respond-to-max(med) {
+    margin-top: 0;  
+  }
 }
 .row:before, .row:after {
   content: '';
@@ -38,6 +47,9 @@ video {
 @for $i from 1 through 11 {
   .c#{$i} {
     width: 8.3333333333% * $i;
+    @include respond-to-max(med) {
+      margin-top: $v-gutter;  
+    }
   }
 }
 @for $i from 1 through 12 {
@@ -93,7 +105,7 @@ video {
 @include respond-to-max(sml) {
   @for $i from 1 through 11 {
     .sml-c#{$i} {
-      width: 8.3333333333% * $i;
+      width: 8.3333333333% * $i; 
     }
   }
   @for $i from 0 through 12 {
