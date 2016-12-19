@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   get '/projecteo' => 'pages#projecteo'
   get '/deskbeers' => 'pages#deskbeers'
   get '/archive' => 'pages#archive' 
-  get '/product' => 'pages#product'
+  get '/uxarchive' => 'pages#uxarchive' 
+  get '/visualarchive' => 'pages#visualarchive' 
+  get '/portfolio' => 'pages#portfolio'
 
 end

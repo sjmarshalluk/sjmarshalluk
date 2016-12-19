@@ -4,7 +4,7 @@
 
 body {
   color: $dark-grey;
-  font-family: $sans-serif-stack;
+  font-family: $serif-stack;
   font-size: $base-font-size;
   line-height: 1.7;
   background-color: $white;
@@ -148,6 +148,7 @@ h1.xlg {
 h2 {
   font-size: $type-sz-2;
   line-height: 1.2;
+  font-weight: 900
 }
 h3 {
   font-size: $type-sz-3;

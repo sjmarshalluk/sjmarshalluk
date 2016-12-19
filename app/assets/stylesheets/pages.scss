@@ -1,5 +1,15 @@
 @import '_setup';
 
+
+.header {
+  font-family: $sans-serif-stack;
+  font-size: 16px;
+}
+
+.index {
+  font-family: $sans-serif-stack;
+}
+
 ul.nav {
   float: right;
 }
@@ -8,6 +18,11 @@ ul.nav li {
   float: left;
   width: 100px;
   text-align: right;
+}
+
+
+.grey {
+  background-color: $light-grey;
 }
 
 
