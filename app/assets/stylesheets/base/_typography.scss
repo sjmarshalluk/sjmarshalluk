@@ -4,7 +4,7 @@
 
 body {
   color: $dark-grey;
-  font-family: $serif-stack;
+  font-family: $sans-serif-stack;
   font-size: $base-font-size;
   line-height: 1.7;
   background-color: $white;
@@ -58,23 +58,7 @@ p.alt {
 .t-center {
   text-align: center;
 }
-del {
-  position: relative;
-  text-decoration: none;
-}
-del:after {
-  display: block;
-  content: '';
-  position: absolute;
-  top: 42%;
-  width: 100%;
-  background: $text;
-  height: 5px;
 
-  @include respond-to(site-width) {
-    height: 10px;
-  }
-}
 
 .strike {
     text-decoration: line-through;
@@ -82,14 +66,7 @@ del:after {
 .inline {
   display: inline;
 }
-.alert {
-  margin-left: 0.5em;
-  color: $error;
-}
-.success {
-  margin-left: 0.5em;
-  color: $success;
-}
+
 span.highlight {
   color: $brand;
 }
@@ -100,17 +77,7 @@ li {
   margin-left: 0;
   margin-bottom: 20px;
 }
-li a {
-  background-color: $white;
-  color: $text;
-  border-bottom: 1px solid $brand;
-  font-size: 14px;
-}
-li a:hover {
-  background-color: $brand;
-  color: $white;
-  border-bottom: 1px solid $brand;
-}
+
 
 
 
@@ -127,7 +94,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   margin-bottom: 0.5em;
   font-size: $type-sz-1;
-  line-height: 1;
+  line-height: 1.1;
   font-family: $serif-stack;
   font-weight: 900;
 
@@ -146,6 +113,7 @@ h1.xlg {
 }
 
 h2 {
+  font-family: $serif-stack;
   font-size: $type-sz-2;
   line-height: 1.2;
   font-weight: 900
@@ -181,22 +149,13 @@ button::-moz-focus-inner {
   padding: 0;
   border: none; // For FF 3.6
 }
-a, form.general div.submit button {
+a {
   color: $brand;
   text-decoration: none;
-  background-color: $white;
-  @include transition(background-color 0.25s);
 }
-form.text div.submit button span{
-  border-bottom: 2px solid transparent;
-  @include transition(border-color 0.25s)
-}
-a:hover, a:focus,
-form.text:hover div.submit button span {
-  background-color: $brand;
 
-  // The underline can't be applied to <button> in FF 3.6, so we instead
-    // apply it to a non-semantic wrapper inside.
+a:hover, 
+a:focus {
 }
 a:active {}
 a:visited {}
@@ -221,16 +180,16 @@ a.arrow {
 }
 
 
-.header a:hover {
-  background-color: $white;
+.header a {
+  color: $text;
 }
-.header a span {
-  background-color: $brand;
-  @include transition(background-color 0.25s)
+.header .logo {
+  font-family: $serif-stack;
+  color: $text;
+  font-weight: 900;
+  font-size: 16px;
 }
-.header a:hover span {
-  background-color: $white;
-}
+
 
 input.placeholder, textarea.placeholder {
   color: #999;

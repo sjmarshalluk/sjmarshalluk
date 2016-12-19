@@ -3,7 +3,14 @@
 
 .header {
   font-family: $sans-serif-stack;
-  font-size: 16px;
+  font-size: 14px;
+  position: absolute;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.content .intro {
+  padding-top: 150px;
 }
 
 .index {
@@ -12,6 +19,7 @@
 
 ul.nav {
   float: right;
+  position: relative;
 }
 
 ul.nav li {
@@ -23,6 +31,10 @@ ul.nav li {
 
 .grey {
   background-color: $light-grey;
+}
+
+.dark-grey {
+  background-color: $text;
 }
 
 
@@ -91,7 +103,7 @@ ul.nav li {
 
 
 a.thumb {
-  height: 600px;
+  height: 500px;
   display: block;
   color: $text;
   @include transition(opacity 0.25s);
@@ -110,6 +122,25 @@ a.thumb:hover {
 }
 
 
+
+/** headers **/
+
+.round {
+  background: #13ccc1;
+}
+.smr {
+  background: #fce8ea image-url('smr/bg.png') no-repeat top center / cover;
+  padding-bottom: 200px;
+}
+.deskbeers {
+  background: #e3b104 image-url('deskbeers/feature-beers.png') no-repeat center 420px / 1200px;
+  padding-bottom: 200px;
+}
+
+
+
+
+/** thumbs **/
 
 #round {
   background: #13ccc1 image-url('round/homepage.png') no-repeat center 4em / 350px;
