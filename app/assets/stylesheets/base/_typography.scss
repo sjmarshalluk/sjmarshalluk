@@ -120,7 +120,7 @@ h1 {
   text-align: center;
 
   @include respond-to-max(med) {
-    font-size: $type-sz-1-m;
+    font-size: 60px;
   }
 }
 h1 span {

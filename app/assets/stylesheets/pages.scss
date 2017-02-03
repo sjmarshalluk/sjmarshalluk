@@ -9,6 +9,10 @@
   width: 100%;
   padding: 20px;
   margin-top: 20px;
+  @include respond-to-max(med) {
+    padding: 10px;
+    margin-top: 0;
+  }
 }
 
 .header .row {
@@ -36,6 +40,9 @@ ul.nav li {
   float: left;
   margin-left: 20px;
   text-align: right;
+  @include respond-to-max(med) {
+    margin-left: 10px;
+  }
 }
 
 ul.nav li a {
@@ -43,6 +50,9 @@ ul.nav li a {
   border-radius: $border-radius;
   background-color: transparent;
   @include transition(background-color 0.25s);
+  @include respond-to-max(med) {
+    padding: 10px;
+  }
 }
 
 ul.nav li a:hover {
@@ -138,6 +148,10 @@ ul.nav li a.selected {
 .me-header {
   background: image-url('other/me.png') no-repeat center center / 500px;
   padding: 200px 0; 
+  @include respond-to-max(med) {
+    background: image-url('other/me.png') no-repeat center center / 350px;
+    padding: 100px 0;
+  }
 }
 
 a.thumb {

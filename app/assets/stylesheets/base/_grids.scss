@@ -28,15 +28,10 @@ a.thumb,
   overflow: hidden;
   padding: 75px 20px;
   @include respond-to-max(med) {
-    padding: 50px 25px;
+    padding: 50px 10px;
   }
 }
-.wrapper.header {
-  padding: 0 75px;
-  @include respond-to-max(med) {
-    padding: 0 25px;
-  }
-}
+
 .row {
   width: 100%;
   overflow: hidden;
