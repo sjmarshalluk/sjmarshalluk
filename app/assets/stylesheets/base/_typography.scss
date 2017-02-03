@@ -13,10 +13,10 @@ body {
 
 @font-face {
   font-family: 'HouseSampler-HouseSlant';
-  src: url('HouseSampler-HouseSlant.eot');
-  src: url('HouseSampler-HouseSlant.eot?#iefix') format('embedded-opentype'),
-    url('HouseSampler-HouseSlant.woff') format('woff'),
-    url('HouseSampler-HouseSlant.ttf') format('truetype');
+  src: font-url('HouseSampler-HouseSlant.eot');
+  src: font-url('HouseSampler-HouseSlant.eot?#iefix') format('embedded-opentype'),
+    font-url('HouseSampler-HouseSlant.woff') format('woff'),
+    font-url('HouseSampler-HouseSlant.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
