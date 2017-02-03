@@ -10,7 +10,7 @@
   padding: 20px;
   margin-top: 20px;
   @include respond-to-max(med) {
-    padding: 10px;
+    padding: 0;
     margin-top: 0;
   }
 }
@@ -192,7 +192,10 @@ a.project-next {
   transform: rotate(-10deg);
   @include transition(background-color 0.25s);
   @include respond-to-max(med) {
-    font-size: 24px;
+    font-size: 40px;
+    width: 200px;
+    height: 200px;
+    background-color: $light-grey;
   }
 }
 
@@ -207,6 +210,10 @@ a.project-next::before {
   margin-left: 30px;
   padding-top: 85px;
   transform: rotate(10deg);
+  @include respond-to-max(med) {
+    padding-top: 50px;
+    color: $grey;
+  }
 } 
 
 a.project-prev::before {
@@ -315,6 +322,9 @@ ul#tickets {
 
 #round {
   background: #13ccc1 image-url('round/homepage.png') no-repeat center 4em / 350px;
+  @include respond-to-max(med) {
+    background: #13ccc1 image-url('round/homepage.png') no-repeat center 4em / 250px;
+  }
 }
 
 #marshallhavard {
@@ -334,6 +344,9 @@ ul#tickets {
 
 #deskbeers-design {
   background: #e3b104 image-url('deskbeers/dbv3.png') no-repeat center 4em / 550px;
+  @include respond-to-max(med) {
+    background: #e3b104 image-url('deskbeers/dbv3.png') no-repeat center 4em / 250px;
+  }
 }
 
 #smr {
