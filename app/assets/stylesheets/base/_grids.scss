@@ -15,12 +15,18 @@ video {
   width: 100%;
 }
 
+img,
+a.thumb,
+.rounded {
+  border-radius: $border-radius;
+}
+
 .wrapper,
 .grid {
   margin: 0 auto;
   max-width: $site-max-width;
   overflow: hidden;
-  padding: 75px 75px;
+  padding: 75px 20px;
   @include respond-to-max(med) {
     padding: 50px 25px;
   }
@@ -172,7 +178,14 @@ video {
   }
 }
 .push-top-quart {
-  margin-top: 35px;
+  margin-top: 30px;
+
+  @media print {
+    margin-top: 0;
+  }
+}
+.push-top-half-quart {
+  margin-top: 90px;
 
   @media print {
     margin-top: 0;

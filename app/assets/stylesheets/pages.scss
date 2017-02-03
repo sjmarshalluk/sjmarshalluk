@@ -4,13 +4,23 @@
 .header {
   font-family: $sans-serif-stack;
   font-size: 14px;
-  position: absolute;
+  position: fixed;
+  z-index: 100;
   width: 100%;
-  padding: 0 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.header .row {
+  margin: 0;
+}
+
+.header a {
+  padding: 10px;
 }
 
 .content .intro {
-  padding-top: 150px;
+  padding-top: 65px;
 }
 
 .index {
@@ -24,8 +34,24 @@ ul.nav {
 
 ul.nav li {
   float: left;
-  width: 100px;
+  margin-left: 20px;
   text-align: right;
+}
+
+ul.nav li a {
+  padding: 10px 15px;
+  border-radius: $border-radius;
+  background-color: transparent;
+  @include transition(background-color 0.25s);
+}
+
+ul.nav li a:hover {
+  background-color: $light-grey;
+}
+
+ul.nav li a.selected {
+  background-color: $brand;
+  color: $white;
 }
 
 
@@ -38,6 +64,11 @@ ul.nav li {
 }
 
 
+.arrow.left {
+  -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
 
 
 
@@ -50,7 +81,10 @@ ul.nav li {
 .image {
   text-align: center;
   background-color: #111213;
-  padding: 100px 0;
+  padding: 150px 0;
+  overflow: hidden;
+    margin-left:  $h-gutter;
+    margin-right: $h-gutter;
 }
 
 
@@ -101,11 +135,16 @@ ul.nav li {
 
 
 
+.me-header {
+  background: image-url('other/me.png') no-repeat center center / 500px;
+  padding: 200px 0; 
+}
 
 a.thumb {
   height: 500px;
-  display: block;
   color: $text;
+  display: block;
+  opacity: 1;
   @include transition(opacity 0.25s);
   @include respond-to-max(med) {
     height: 400px;
@@ -118,7 +157,55 @@ a.thumb p {
 }
 
 a.thumb:hover {
-  opacity: 0.8;
+  opacity: 0.8
+}
+
+a.project-prev,
+a.project-next {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  display: block;
+  background-color: transparent;
+  color: $brand;
+  font-family: $serif-stack;
+  margin: 20px 0;
+  line-height: 0.9;
+  background-color: $white;
+  border-radius: 300px;
+  transform: rotate(-10deg);
+  @include transition(background-color 0.25s);
+  @include respond-to-max(med) {
+    font-size: 24px;
+  }
+}
+
+a.project-prev::before,
+a.project-next::before {
+  display: block;
+  color: $light-grey;
+  font-size: 16px;
+  font-family: $sans-serif-stack;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  padding-top: 85px;
+  transform: rotate(10deg);
+} 
+
+a.project-prev::before {
+  content: "Previous";
+} 
+
+a.project-next::before {
+  content: "Next";
+} 
+
+a.project-prev:hover,
+a.project-next:hover {
+  background-color: $light-grey;
 }
 
 
@@ -128,14 +215,84 @@ a.thumb:hover {
 .round {
   background: #13ccc1;
 }
-.smr {
+.smr-notused {
   background: #fce8ea image-url('smr/bg.png') no-repeat top center / cover;
-  padding-bottom: 200px;
 }
 .deskbeers {
   background: #e3b104 image-url('deskbeers/feature-beers.png') no-repeat center 420px / 1200px;
   padding-bottom: 200px;
 }
+.mosaic {
+  background: #22a0b7;
+}
+.projecteo {
+  background: #f8c23e;
+}
+
+
+/** smr **/
+
+ul#tickets {
+  padding: 30px;
+  overflow: hidden;
+  -webkit-animation: Background 10s ease infinite;
+  -moz-animation: Background 10s ease infinite;
+  animation: Background 10s ease infinite;
+}
+
+#tickets li {
+  width: 33.33333%;
+  padding: 20px;
+  float: left;
+  opacity: 0.2
+}
+
+#tickets li.sat {
+  -webkit-animation: OpacitySat 10s ease infinite;
+  -moz-animation: OpacitySat 10s ease infinite;
+  animation: OpacitySat 10s ease infinite;
+}
+
+#tickets li.sun {
+  -webkit-animation: OpacitySun 10s ease infinite;
+  -moz-animation: OpacitySun 10s ease infinite;
+  animation: OpacitySun 10s ease infinite;
+}
+
+#tickets li.we {
+  -webkit-animation: OpacityWe 10s ease infinite;
+  -moz-animation: OpacityWe 10s ease infinite;
+  animation: OpacityWe 10s ease infinite;
+}
+
+@keyframes Background { 
+  0%{background-color:#de4045}
+  25%{background-color:#4abccf}
+  50%{background-color:#26468c}
+  100%{background-color:#de4045}
+}
+
+@keyframes OpacitySat { 
+  0%{opacity:1}
+  25%{opacity:0.2}
+  50%{opacity:0.2}
+  100%{opacity:1}
+}
+
+@keyframes OpacitySun { 
+  0%{opacity:0.2}
+  25%{opacity:1}
+  50%{opacity:0.2}
+  100%{opacity:0.2}
+}
+
+@keyframes OpacityWe { 
+  0%{opacity:0.2}
+  25%{opacity:0.2}
+  50%{opacity:1}
+  100%{opacity:0.2}
+}
+
 
 
 
@@ -146,12 +303,27 @@ a.thumb:hover {
   background: #13ccc1 image-url('round/homepage.png') no-repeat center 4em / 350px;
 }
 
+#marshallhavard {
+  background: #1a3155 image-url('marshallhavard/logo-icon.png') no-repeat center center / 200px;
+  p {
+    color: $white;
+  }
+}
+
+#containercamp {
+  background: #ffffff image-url('yld/cc-photo2.png') no-repeat center center / cover;
+}
+
 #deskbeers {
-  background: #ffffff image-url('deskbeers/stall.png') no-repeat top center / cover;
+  background: #ffffff image-url('deskbeers/stall.png') no-repeat center center / cover;
+}
+
+#deskbeers-design {
+  background: #e3b104 image-url('deskbeers/dbv3.png') no-repeat center 4em / 550px;
 }
 
 #smr {
-  background: #ffffff image-url('smr/brand.png') no-repeat top center / cover;
+  background: #ffffff image-url('smr/brand.png') no-repeat center center / cover;
 }
 
 #mosaic {
