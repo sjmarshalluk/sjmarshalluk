@@ -159,6 +159,7 @@ a.thumb {
   color: $text;
   display: block;
   opacity: 1;
+  margin-bottom: 10px;
   @include transition(opacity 0.25s);
   @include respond-to-max(med) {
     height: 400px;
@@ -171,12 +172,12 @@ a.thumb p {
 }
 
 a.thumb:hover {
-  opacity: 0.8
+  opacity: 0.8;
 }
 
 a.project-prev,
 a.project-next {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 700;
   text-align: center;
   width: 300px;

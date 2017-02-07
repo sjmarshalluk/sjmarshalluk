@@ -111,14 +111,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
   margin: 0.5em 0;
-  font-size: 80px;
+  font-size: 70px;
   line-height: 0.8;
   font-family: $serif-stack;
-  font-weight: 800;
-  color: $brand;
-  transform: rotate(-10deg);
+  font-weight: 500;
+  color: $text;
   text-align: center;
-
+  transform: rotate(-10deg);
   @include respond-to-max(med) {
     font-size: 60px;
   }
