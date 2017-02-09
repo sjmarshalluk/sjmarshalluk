@@ -1,0 +1,1504 @@
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */
+/* line 3, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 3, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 3, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 3, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 3, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 3, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_reset.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 3, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 7, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 13, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+img,
+video {
+  width: 100%;
+}
+
+/* line 18, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+img,
+a.thumb,
+.rounded {
+  border-radius: 4px;
+}
+
+/* line 24, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.wrapper,
+.grid {
+  margin: 0 auto;
+  max-width: 1445px;
+  overflow: hidden;
+  padding: 75px 20px;
+}
+@media only screen and (max-width: 799px) {
+  /* line 24, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .wrapper,
+  .grid {
+    padding: 75px 0;
+  }
+}
+
+/* line 35, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.row {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 40px;
+}
+@media only screen and (max-width: 799px) {
+  /* line 35, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .row {
+    margin-top: 0;
+  }
+}
+
+/* line 43, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.row:before, .row:after {
+  content: '';
+  display: table;
+}
+
+/* line 49, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.c1 {
+  width: 8.33333%;
+}
+@media only screen and (max-width: 799px) {
+  /* line 49, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .c1 {
+    margin-top: 40px;
+  }
+}
+
+/* line 49, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.c2 {
+  width: 16.66667%;
+}
+@media only screen and (max-width: 799px) {
+  /* line 49, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .c2 {
+    margin-top: 40px;
+  }
+}
+
+/* line 49, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.c3 {
+  width: 25.0%;
+}
+@media only screen and (max-width: 799px) {
+  /* line 49, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .c3 {
+    margin-top: 40px;
+  }
+}
+
+/* line 49, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.c4 {
+  width: 33.33333%;
+}
+@media only screen and (max-width: 799px) {
+  /* line 49, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .c4 {
+    margin-top: 40px;
+  }
+}
+
+/* line 49, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.c5 {
+  width: 41.66667%;
+}
+@media only screen and (max-width: 799px) {
+  /* line 49, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .c5 {
+    margin-top: 40px;
+  }
+}
+
+/* line 49, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.c6 {
+  width: 50.0%;
+}
+@media only screen and (max-width: 799px) {
+  /* line 49, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .c6 {
+    margin-top: 40px;
+  }
+}
+
+/* line 49, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.c7 {
+  width: 58.33333%;
+}
+@media only screen and (max-width: 799px) {
+  /* line 49, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .c7 {
+    margin-top: 40px;
+  }
+}
+
+/* line 49, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.c8 {
+  width: 66.66667%;
+}
+@media only screen and (max-width: 799px) {
+  /* line 49, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .c8 {
+    margin-top: 40px;
+  }
+}
+
+/* line 49, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.c9 {
+  width: 75.0%;
+}
+@media only screen and (max-width: 799px) {
+  /* line 49, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .c9 {
+    margin-top: 40px;
+  }
+}
+
+/* line 49, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.c10 {
+  width: 83.33333%;
+}
+@media only screen and (max-width: 799px) {
+  /* line 49, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .c10 {
+    margin-top: 40px;
+  }
+}
+
+/* line 49, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.c11 {
+  width: 91.66667%;
+}
+@media only screen and (max-width: 799px) {
+  /* line 49, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .c11 {
+    margin-top: 40px;
+  }
+}
+
+/* line 57, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.s1 {
+  margin-left: 8.33333%;
+}
+
+/* line 57, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.s2 {
+  margin-left: 16.66667%;
+}
+
+/* line 57, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.s3 {
+  margin-left: 25.0%;
+}
+
+/* line 57, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.s4 {
+  margin-left: 33.33333%;
+}
+
+/* line 57, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.s5 {
+  margin-left: 41.66667%;
+}
+
+/* line 57, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.s6 {
+  margin-left: 50.0%;
+}
+
+/* line 57, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.s7 {
+  margin-left: 58.33333%;
+}
+
+/* line 57, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.s8 {
+  margin-left: 66.66667%;
+}
+
+/* line 57, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.s9 {
+  margin-left: 75.0%;
+}
+
+/* line 57, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.s10 {
+  margin-left: 83.33333%;
+}
+
+/* line 57, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.s11 {
+  margin-left: 91.66667%;
+}
+
+/* line 57, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.s12 {
+  margin-left: 100.0%;
+}
+
+/* line 62, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.c1 {
+  position: relative;
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 1px;
+}
+
+/* line 62, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.c2 {
+  position: relative;
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 1px;
+}
+
+/* line 62, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.c3 {
+  position: relative;
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 1px;
+}
+
+/* line 62, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.c4 {
+  position: relative;
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 1px;
+}
+
+/* line 62, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.c5 {
+  position: relative;
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 1px;
+}
+
+/* line 62, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.c6 {
+  position: relative;
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 1px;
+}
+
+/* line 62, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.c7 {
+  position: relative;
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 1px;
+}
+
+/* line 62, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.c8 {
+  position: relative;
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 1px;
+}
+
+/* line 62, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.c9 {
+  position: relative;
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 1px;
+}
+
+/* line 62, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.c10 {
+  position: relative;
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 1px;
+}
+
+/* line 62, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.c11 {
+  position: relative;
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 1px;
+}
+
+/* line 62, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.c12 {
+  position: relative;
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 1px;
+}
+
+/* line 70, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.c12,
+.s12 {
+  float: none;
+  width: 100%;
+}
+
+/* line 75, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.no-pad {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/* line 79, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.slim {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media only screen and (max-width: 799px) {
+  /* line 86, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .med-c1 {
+    width: 8.33333%;
+  }
+
+  /* line 86, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .med-c2 {
+    width: 16.66667%;
+  }
+
+  /* line 86, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .med-c3 {
+    width: 25.0%;
+  }
+
+  /* line 86, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .med-c4 {
+    width: 33.33333%;
+  }
+
+  /* line 86, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .med-c5 {
+    width: 41.66667%;
+  }
+
+  /* line 86, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .med-c6 {
+    width: 50.0%;
+  }
+
+  /* line 86, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .med-c7 {
+    width: 58.33333%;
+  }
+
+  /* line 86, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .med-c8 {
+    width: 66.66667%;
+  }
+
+  /* line 86, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .med-c9 {
+    width: 75.0%;
+  }
+
+  /* line 86, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .med-c10 {
+    width: 83.33333%;
+  }
+
+  /* line 86, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .med-c11 {
+    width: 91.66667%;
+  }
+
+  /* line 86, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .med-c12 {
+    width: 100.0%;
+  }
+
+  /* line 91, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .med-s0 {
+    margin-left: 0%;
+  }
+
+  /* line 91, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .med-s1 {
+    margin-left: 8.33333%;
+  }
+
+  /* line 91, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .med-s2 {
+    margin-left: 16.66667%;
+  }
+
+  /* line 91, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .med-s3 {
+    margin-left: 25.0%;
+  }
+
+  /* line 91, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .med-s4 {
+    margin-left: 33.33333%;
+  }
+
+  /* line 91, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .med-s5 {
+    margin-left: 41.66667%;
+  }
+
+  /* line 91, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .med-s6 {
+    margin-left: 50.0%;
+  }
+
+  /* line 91, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .med-s7 {
+    margin-left: 58.33333%;
+  }
+
+  /* line 91, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .med-s8 {
+    margin-left: 66.66667%;
+  }
+
+  /* line 91, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .med-s9 {
+    margin-left: 75.0%;
+  }
+
+  /* line 91, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .med-s10 {
+    margin-left: 83.33333%;
+  }
+
+  /* line 91, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .med-s11 {
+    margin-left: 91.66667%;
+  }
+
+  /* line 91, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .med-s12 {
+    margin-left: 100.0%;
+  }
+
+  /* line 96, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .med-no-pad {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  /* line 100, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .slim {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media only screen and (max-width: 499px) {
+  /* line 108, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .sml-c1 {
+    width: 8.33333%;
+  }
+
+  /* line 108, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .sml-c2 {
+    width: 16.66667%;
+  }
+
+  /* line 108, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .sml-c3 {
+    width: 25.0%;
+  }
+
+  /* line 108, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .sml-c4 {
+    width: 33.33333%;
+  }
+
+  /* line 108, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .sml-c5 {
+    width: 41.66667%;
+  }
+
+  /* line 108, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .sml-c6 {
+    width: 50.0%;
+  }
+
+  /* line 108, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .sml-c7 {
+    width: 58.33333%;
+  }
+
+  /* line 108, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .sml-c8 {
+    width: 66.66667%;
+  }
+
+  /* line 108, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .sml-c9 {
+    width: 75.0%;
+  }
+
+  /* line 108, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .sml-c10 {
+    width: 83.33333%;
+  }
+
+  /* line 108, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .sml-c11 {
+    width: 91.66667%;
+  }
+
+  /* line 113, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .sml-s0 {
+    margin-left: 0%;
+  }
+
+  /* line 113, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .sml-s1 {
+    margin-left: 8.33333%;
+  }
+
+  /* line 113, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .sml-s2 {
+    margin-left: 16.66667%;
+  }
+
+  /* line 113, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .sml-s3 {
+    margin-left: 25.0%;
+  }
+
+  /* line 113, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .sml-s4 {
+    margin-left: 33.33333%;
+  }
+
+  /* line 113, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .sml-s5 {
+    margin-left: 41.66667%;
+  }
+
+  /* line 113, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .sml-s6 {
+    margin-left: 50.0%;
+  }
+
+  /* line 113, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .sml-s7 {
+    margin-left: 58.33333%;
+  }
+
+  /* line 113, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .sml-s8 {
+    margin-left: 66.66667%;
+  }
+
+  /* line 113, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .sml-s9 {
+    margin-left: 75.0%;
+  }
+
+  /* line 113, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .sml-s10 {
+    margin-left: 83.33333%;
+  }
+
+  /* line 113, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .sml-s11 {
+    margin-left: 91.66667%;
+  }
+
+  /* line 113, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .sml-s12 {
+    margin-left: 100.0%;
+  }
+
+  /* line 117, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .sml-c12 {
+    width: 100%;
+  }
+}
+/* line 123, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+  clear: both;
+}
+
+/* line 129, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.pull-right {
+  float: right;
+  margin-left: 20px;
+}
+
+/* line 133, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.push-top {
+  margin-top: 120px;
+}
+@media only screen and (max-width: 799px) {
+  /* line 133, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .push-top {
+    margin-top: 60px;
+  }
+}
+
+/* line 140, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.push-bottom {
+  margin-bottom: 120px;
+}
+@media only screen and (max-width: 799px) {
+  /* line 140, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .push-bottom {
+    margin-bottom: 60px;
+  }
+}
+
+/* line 148, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.push-bottom-half {
+  margin-bottom: 60px;
+}
+@media only screen and (max-width: 799px) {
+  /* line 148, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .push-bottom-half {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  /* line 156, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .m-no-push-top {
+    margin-top: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  /* line 162, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .m-no-push-bottom {
+    margin-bottom: 0 !important;
+  }
+}
+
+/* line 168, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.push-top-half {
+  margin-top: 60px;
+}
+@media print {
+  /* line 168, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .push-top-half {
+    margin-top: 0;
+  }
+}
+
+/* line 175, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.push-top-quart {
+  margin-top: 30px;
+}
+@media print {
+  /* line 175, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .push-top-quart {
+    margin-top: 0;
+  }
+}
+
+/* line 182, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+.push-top-half-quart {
+  margin-top: 90px;
+}
+@media print {
+  /* line 182, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .push-top-half-quart {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  /* line 191, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .m-hide {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+  /* line 196, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .m-sml-hide {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  /* line 201, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .m-block {
+    display: block;
+  }
+}
+
+@media print {
+  /* line 206, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_grids.scss */
+  .no-print {
+    display: none;
+  }
+}
+
+/* line 5, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_typography.scss */
+body {
+  color: #232323;
+  font-family: "Inconsolata", monospace;
+  font-size: 16px;
+  line-height: 1.7;
+  background-color: #FFF;
+}
+
+@font-face {
+  font-family: 'HouseSampler-HouseSlant';
+  src: url(/assets/HouseSampler-HouseSlant-b8e576e50ebd55d5a4dc2b324b0948c93de58392ee82a482886236e66c6a96b1.otf);
+  src: url(/assets/HouseSampler-HouseSlant-93c93cb8e5f3d91d0aa28af8af30f42d38ff47580f484e23031bf354c776a49c.eot?#iefix) format("embedded-opentype"), url(/assets/HouseSampler-HouseSlant-91177c231d10f223e30a978733b4b745b952fe3c165a1b188193f051ed663666.woff) format("woff"), url(/assets/HouseSampler-HouseSlant-06f0d980c9a53105a6234d636148067fd3da86778174000bb8956f3654791ad5.ttf) format("truetype"), url(/assets/HouseSampler-HouseSlant-9d65acd66b6a336500ac9e6958d1073e21d4e363043facff645dbd6e1445a81c.svg#HouseSampler-HouseSlant) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 38, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_typography.scss */
+p {
+  margin: 0 0 1.7em;
+  font-weight: 300;
+}
+
+/* line 42, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_typography.scss */
+.small {
+  font-size: 14px;
+}
+
+/* line 45, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_typography.scss */
+em {
+  font-style: italic;
+}
+
+/* line 48, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_typography.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 52, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_typography.scss */
+::selection {
+  background: #3c3838;
+  color: #FFF;
+}
+
+/* line 56, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_typography.scss */
+.meta {
+  text-transform: lowercase;
+  font-variant: small-caps;
+  color: #8b8282;
+}
+
+/* line 61, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_typography.scss */
+p.alt {
+  font-weight: 200;
+}
+
+/* line 64, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_typography.scss */
+.faded {
+  color: #9c9c9c;
+}
+
+/* line 67, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_typography.scss */
+.no-margin {
+  margin: 0;
+}
+
+/* line 70, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_typography.scss */
+.t-center {
+  text-align: center;
+}
+
+/* line 73, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_typography.scss */
+hr {
+  border-color: #ebebeb;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+/* line 81, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_typography.scss */
+.strike {
+  text-decoration: line-through;
+}
+
+/* line 84, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_typography.scss */
+.inline {
+  display: inline;
+}
+
+/* line 88, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_typography.scss */
+span.highlight {
+  color: #b29600;
+}
+
+/* line 91, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_typography.scss */
+ul {
+  list-style-type: none;
+}
+
+/* line 94, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_typography.scss */
+li {
+  margin-left: 0;
+  margin-bottom: 20px;
+}
+
+/* line 108, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.75em;
+  font-weight: 100;
+}
+
+/* line 112, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_typography.scss */
+h1 {
+  margin: 0.5em 0;
+  font-size: 70px;
+  line-height: 0.8;
+  font-family: "HouseSampler-HouseSlant", serif;
+  font-weight: 500;
+  color: #3c3838;
+  text-align: center;
+  transform: rotate(-10deg);
+}
+@media only screen and (max-width: 799px) {
+  /* line 112, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_typography.scss */
+  h1 {
+    font-size: 60px;
+  }
+}
+
+/* line 125, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_typography.scss */
+h1 span {
+  color: #ebebeb;
+}
+
+/* line 128, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_typography.scss */
+.about h1 {
+  color: #FFF;
+}
+
+@media only screen and (min-width: 1445px) {
+  /* line 131, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_typography.scss */
+  h1.xlg {
+    font-size: 80px;
+  }
+}
+
+/* line 137, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_typography.scss */
+h2 {
+  font-family: "Inconsolata", monospace;
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 500;
+  margin-top: 2em;
+  text-align: left;
+}
+
+/* line 145, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_typography.scss */
+h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* line 151, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_typography.scss */
+h3::after {
+  content: "-";
+  display: block;
+  margin-top: 60px;
+  color: #b29600;
+}
+
+/* line 157, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_typography.scss */
+h4 {
+  font-size: 14px;
+}
+
+/* line 160, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_typography.scss */
+h5 {
+  margin-top: 50px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+/* line 165, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_typography.scss */
+h6 {
+  font-size: 12px;
+}
+
+/* line 178, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_typography.scss */
+a, button {
+  cursor: pointer;
+}
+
+/* line 181, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_typography.scss */
+button::-moz-focus-inner {
+  padding: 0;
+  border: none;
+}
+
+/* line 185, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_typography.scss */
+a {
+  color: #b29600;
+  text-decoration: none;
+}
+
+/* line 195, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_typography.scss */
+a.small {
+  font-size: 12px;
+  padding: 10px;
+}
+
+/* line 203, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_typography.scss */
+.header a {
+  color: #3c3838;
+}
+
+/* line 206, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_typography.scss */
+.header .logo {
+  font-family: "HouseSampler-HouseSlant", serif;
+  color: #3c3838;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+/* line 214, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_typography.scss */
+input.placeholder, textarea.placeholder {
+  color: #999;
+}
+
+/* line 217, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/base/_typography.scss */
+input[disabled],
+button[disabled] {
+  cursor: pointer;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+/* line 4, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+.header {
+  font-family: "Inconsolata", monospace;
+  font-size: 14px;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+}
+@media only screen and (max-width: 799px) {
+  /* line 4, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+  .header {
+    padding: 0;
+    margin-top: 0;
+  }
+}
+
+/* line 18, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+.header .row {
+  margin: 0;
+}
+
+/* line 22, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+.header a {
+  padding: 10px;
+}
+
+/* line 26, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+.content .intro {
+  padding-top: 65px;
+}
+
+/* line 30, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+.index {
+  font-family: "Inconsolata", monospace;
+}
+
+/* line 34, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+ul.nav {
+  float: right;
+  position: relative;
+}
+
+/* line 39, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+ul.nav li {
+  float: left;
+  margin-left: 20px;
+  text-align: right;
+}
+@media only screen and (max-width: 799px) {
+  /* line 39, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+  ul.nav li {
+    margin-left: 10px;
+  }
+}
+
+/* line 48, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+ul.nav li a {
+  padding: 10px 15px;
+  border-radius: 4px;
+  background-color: transparent;
+  -webkit-transition: background-color 0.25s;
+  -moz-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+}
+@media only screen and (max-width: 799px) {
+  /* line 48, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+  ul.nav li a {
+    padding: 10px;
+  }
+}
+
+/* line 58, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+ul.nav li a:hover {
+  background-color: #ebebeb;
+}
+
+/* line 62, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+ul.nav li a.selected {
+  background-color: #b29600;
+  color: #FFF;
+}
+
+/* line 68, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+.grey {
+  background-color: #ebebeb;
+}
+
+/* line 72, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+.dark-grey {
+  background-color: #3c3838;
+}
+
+/* line 77, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+.arrow.left {
+  -ms-transform: rotate(180deg);
+  /* IE 9 */
+  -webkit-transform: rotate(180deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(180deg);
+}
+
+/* line 85, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+.image .svg {
+  height: 200px;
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+/* line 91, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+.image {
+  text-align: center;
+  background-color: #111213;
+  padding: 150px 0;
+  overflow: hidden;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* line 101, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+.image .path {
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  -webkit-animation: dash 1s linear alternate forwards infinite;
+}
+
+/* line 107, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+.image .path-long {
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  -webkit-animation: dashlong 1s linear alternate forwards infinite;
+}
+
+/* line 113, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+.image .path-short {
+  stroke-dasharray: 50;
+  stroke-dashoffset: 50;
+  -webkit-animation: dashshort 2s linear alternate forwards infinite;
+}
+
+@-webkit-keyframes dash {
+  from {
+    stroke-dashoffset: 300;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes dashlong {
+  from {
+    stroke-dashoffset: 600;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes dashshort {
+  from {
+    stroke-dashoffset: 50;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+/* line 148, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+.me-header {
+  background: url(/assets/other/me-d0ddfa623b122159b6c469a4307c9daf1826201a10bd6f102385eefb48f8bd6d.png) no-repeat center center/500px;
+  padding: 200px 0;
+}
+@media only screen and (max-width: 799px) {
+  /* line 148, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+  .me-header {
+    background: url(/assets/other/me-d0ddfa623b122159b6c469a4307c9daf1826201a10bd6f102385eefb48f8bd6d.png) no-repeat center center/350px;
+    padding: 100px 0;
+  }
+}
+
+/* line 157, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+a.thumb {
+  height: 500px;
+  color: #3c3838;
+  display: block;
+  opacity: 1;
+  margin-bottom: 10px;
+  -webkit-transition: opacity 0.25s;
+  -moz-transition: opacity 0.25s;
+  -o-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+}
+@media only screen and (max-width: 799px) {
+  /* line 157, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+  a.thumb {
+    height: 400px;
+  }
+}
+
+/* line 169, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+a.thumb p {
+  padding: 15px 20px;
+  font-size: 12px;
+}
+
+/* line 174, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+a.thumb:hover {
+  opacity: 0.8;
+}
+
+/* line 178, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+a.project-prev,
+a.project-next {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  width: 250px;
+  height: 250px;
+  display: block;
+  background-color: transparent;
+  color: #b29600;
+  font-family: "HouseSampler-HouseSlant", serif;
+  margin: 20px 0;
+  line-height: 0.9;
+  background-color: #FFF;
+  border-radius: 300px;
+  transform: rotate(-10deg);
+  -webkit-transition: background-color 0.25s;
+  -moz-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+}
+@media only screen and (max-width: 799px) {
+  /* line 178, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+  a.project-prev,
+  a.project-next {
+    font-size: 40px;
+    width: 200px;
+    height: 200px;
+    background-color: #ebebeb;
+  }
+}
+
+/* line 202, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+a.project-next {
+  float: right;
+}
+
+/* line 206, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+a.project-prev::before,
+a.project-next::before {
+  display: block;
+  color: #ebebeb;
+  font-size: 16px;
+  font-family: "Inconsolata", monospace;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  padding-top: 65px;
+  transform: rotate(10deg);
+}
+@media only screen and (max-width: 799px) {
+  /* line 206, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+  a.project-prev::before,
+  a.project-next::before {
+    padding-top: 50px;
+    color: #cfcfcf;
+  }
+}
+
+/* line 223, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+a.project-prev::before {
+  content: "Previous";
+}
+
+/* line 227, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+a.project-next::before {
+  content: "Next";
+}
+
+/* line 231, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+a.project-prev:hover,
+a.project-next:hover {
+  background-color: #ebebeb;
+}
+
+/** headers **/
+/* line 240, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+.round {
+  background: #13ccc1;
+}
+
+/* line 243, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+.smr-notused {
+  background: #fce8ea url(/assets/smr/bg-bc59a188f0bc48605651f996f10e6be72de8cdd22b8d9fe08be9dba5ef57ab80.png) no-repeat top center/cover;
+}
+
+/* line 246, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+.deskbeers {
+  background: #e3b104 url(/assets/deskbeers/feature-beers-68ec94bdf9369451f2b91f6cb3accdf5da3cf55c18e7fd340f3fa16a1a0b5eff.png) no-repeat center 420px/1200px;
+  padding-bottom: 200px;
+}
+
+/* line 250, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+.mosaic {
+  background: #22a0b7;
+}
+
+/* line 253, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+.projecteo {
+  background: #f8c23e;
+}
+
+/** smr **/
+/* line 260, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+ul#tickets {
+  padding: 30px;
+  overflow: hidden;
+  -webkit-animation: Background 10s ease infinite;
+  -moz-animation: Background 10s ease infinite;
+  animation: Background 10s ease infinite;
+}
+
+/* line 268, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+#tickets li {
+  width: 33.33333%;
+  padding: 20px;
+  float: left;
+  opacity: 0.2;
+}
+
+/* line 275, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+#tickets li.sat {
+  -webkit-animation: OpacitySat 10s ease infinite;
+  -moz-animation: OpacitySat 10s ease infinite;
+  animation: OpacitySat 10s ease infinite;
+}
+
+/* line 281, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+#tickets li.sun {
+  -webkit-animation: OpacitySun 10s ease infinite;
+  -moz-animation: OpacitySun 10s ease infinite;
+  animation: OpacitySun 10s ease infinite;
+}
+
+/* line 287, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+#tickets li.we {
+  -webkit-animation: OpacityWe 10s ease infinite;
+  -moz-animation: OpacityWe 10s ease infinite;
+  animation: OpacityWe 10s ease infinite;
+}
+
+@keyframes Background {
+  0% {
+    background-color: #de4045;
+  }
+  25% {
+    background-color: #4abccf;
+  }
+  50% {
+    background-color: #26468c;
+  }
+  100% {
+    background-color: #de4045;
+  }
+}
+@keyframes OpacitySat {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes OpacitySun {
+  0% {
+    opacity: 0.2;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+@keyframes OpacityWe {
+  0% {
+    opacity: 0.2;
+  }
+  25% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+/** thumbs **/
+/* line 327, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+#round {
+  background: #13ccc1 url(/assets/round/homepage-b8925cad3e5bd5543f6db70ad87774dd832e1f687c1712059ae88a7354e2dedb.png) no-repeat center 4em/350px;
+}
+@media only screen and (max-width: 799px) {
+  /* line 327, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+  #round {
+    background: #13ccc1 url(/assets/round/homepage-b8925cad3e5bd5543f6db70ad87774dd832e1f687c1712059ae88a7354e2dedb.png) no-repeat center 4em/250px;
+  }
+}
+
+/* line 334, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+#marshallhavard {
+  background: #1a3155 url(/assets/marshallhavard/logo-icon-448339211050ffacaeeebf0d6fa6df90bbca1f577b2330c810c4ab3bf5505c5d.png) no-repeat center center/200px;
+}
+/* line 336, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+#marshallhavard p {
+  color: #FFF;
+}
+
+/* line 341, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+#containercamp {
+  background: #ffffff url(/assets/yld/cc-photo2-3c10302d4455cf7b3e6cfebf59654849215495eaec4e04d749876f4005a92383.png) no-repeat center center/cover;
+}
+
+/* line 345, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+#deskbeers {
+  background: #ffffff url(/assets/deskbeers/stall-bbd134bdfa2ca5815e90b0f55fc6270f054e7f8a663d44155484a0811c3397ff.png) no-repeat center center/cover;
+}
+
+/* line 349, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+#deskbeers-design {
+  background: #e3b104 url(/assets/deskbeers/dbv3-a064fe6942ba1da7b29cd5fb107abee03dde7fe29922f063735ee4eca5c7af75.png) no-repeat center 4em/550px;
+}
+@media only screen and (max-width: 799px) {
+  /* line 349, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+  #deskbeers-design {
+    background: #e3b104 url(/assets/deskbeers/dbv3-a064fe6942ba1da7b29cd5fb107abee03dde7fe29922f063735ee4eca5c7af75.png) no-repeat center 4em/250px;
+  }
+}
+
+/* line 356, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+#smr {
+  background: #ffffff url(/assets/smr/brand-76252660ed1ae40b7d2e5e7a14adc77b95c0b13b7a9c29a881de083811529c6a.png) no-repeat center center/cover;
+}
+
+/* line 360, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+#mosaic {
+  background: #22a0b7 url(/assets/mosaic/onboarding-eefa309b01489d1d6e979c664bd2b255136d42d901ea10508f96889dee775ee8.gif) no-repeat top center/cover;
+}
+
+/* line 364, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+#projecteo {
+  background: #f8c23e url(/assets/projecteo/illustration-d02e80df0b0434fa228c39e42eb22a0743e02e1a5cb4b27053f8bda486bd7238.png) no-repeat center center/250px;
+}
+
+/* line 368, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+#yld {
+  background: #3e6399 url(/assets/yld/n1-18285174efb8a9ace6a49e8de241c7b313f3f24fc13f622f9fb76012f570ad90.png) no-repeat center center/250px;
+}
+
+/* line 372, /Users/steve/Dropbox/Projects/sjmarshalluk/app/assets/stylesheets/pages.scss */
+#archive {
+  background: #3e6399 url(/assets/archive/wood_logo1-bbcc53dc7541f771c70b2a5845a0684b57386f4c58e874e34a89b8b257af1b18.gif) no-repeat center center/cover;
+}

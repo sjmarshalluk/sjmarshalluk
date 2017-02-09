@@ -180,8 +180,8 @@ a.project-next {
   font-size: 40px;
   font-weight: 700;
   text-align: center;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   display: block;
   background-color: transparent;
   color: $brand;
@@ -199,6 +199,9 @@ a.project-next {
     background-color: $light-grey;
   }
 }
+a.project-next {
+  float: right;
+}
 
 a.project-prev::before,
 a.project-next::before {
@@ -209,7 +212,7 @@ a.project-next::before {
   text-transform: uppercase;
   margin-bottom: 30px;
   margin-left: 30px;
-  padding-top: 85px;
+  padding-top: 65px;
   transform: rotate(10deg);
   @include respond-to-max(med) {
     padding-top: 50px;
