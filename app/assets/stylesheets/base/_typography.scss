@@ -40,7 +40,7 @@ p {
   font-weight: 300;
 }
 .small {
-  font-size: $type-sz-5;
+  font-size: 14px;
 }
 em {
   font-style: italic;
@@ -94,6 +94,11 @@ ul {
 li {
   margin-left: 0;
   margin-bottom: 20px;
+}
+ul.bullets li::before,
+ul.bullets li::after {
+  content: " * ";
+  color: $brand;
 }
 
 
